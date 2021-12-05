@@ -35,7 +35,7 @@ DEF_UNAPPROVED_MSG = (
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
     "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
-    "┣[• 𝐁𝐘 ⭐️𝐑𝐀𝐌-𝐔𝐁𝐎𝐓⭐️\n"
+    "┣[• 𝐁𝐘 ⭐️𝐎𝐒𝐂𝐀𝐑⭐️\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯")
 # =================================================================
 
@@ -95,7 +95,7 @@ async def permitpm(event):
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
                     "`Bacot bat Jamet tolol, Gua blok ajalah`\n"
-                    f"`Tunggu {DEFAULTUSER} Bales ya`"
+                    f"`Tunggu {DEFAULTUSER} Bales ya Buat d buka lagi blok ny`"
                 )
 
                 try:
