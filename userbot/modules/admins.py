@@ -36,7 +36,7 @@ from userbot.events import register
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`Gambar Terlalu Kecil`"
 PP_ERROR = "`Gagal Memproses Gambar`"
-NO_ADMIN = "`Maaf Anda Bukan Admin:)`"
+NO_ADMIN = "`Maaf KAMU BUKAN ADMIN SAYANG:)`"
 NO_PERM = "`Maaf Anda Tidak Mempunyai Izin!`"
 NO_SQL = "`Berjalan Pada Mode Non-SQL`"
 
@@ -135,7 +135,7 @@ async def promote(promt):
         pin_messages=True,
     )
 
-    await promt.edit("`Kita tambah admin dulu gess!!`")
+    await promt.edit("`Kita tambah anak YATIM ini admin ya gess!!`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "Admin"  # Just in case.
@@ -145,7 +145,7 @@ async def promote(promt):
     # Try to promote if current user is admin or creator
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Udah di Promote Jangan Semena mena Ya admin baru!`")
+        await promt.edit("`Udah di jadiin admin jngn se mena-mena ya anak yatim!`")
         await sleep(5)
         await promt.delete()
 
@@ -176,7 +176,7 @@ async def demote(dmod):
         return await dmod.edit(NO_ADMIN)
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Otw Hapus Admin dulu ges...`")
+    await dmod.edit("`banyak tingkah ni anak yatim. gw cabut admin nya ya wkkwwk...`")
     rank = "Admin"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -200,7 +200,7 @@ async def demote(dmod):
     # Assume we don't have permission to demote
     except BadRequestError:
         return await dmod.edit(NO_PERM)
-    await dmod.edit("`Admin Berhasil Dilepas! Makanya Jangan semena mena tolol`")
+    await dmod.edit("`Admin Berhasil Dilepas! Makanya Jangan semena mena ngentot`")
     await sleep(5)
     await dmod.delete()
 
@@ -231,7 +231,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Kita banned Jamet dulu gess`")
+    await bon.edit("`Kita banned Jamet dulu ya gess yaa...`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
@@ -290,7 +290,7 @@ async def nothanos(unbon):
 
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Udah di Unban Jangan Jadi Jamet!```")
+        await unbon.edit("```Udah di Unban Jangan Jadi Jamet lagi ya anak yatim!```")
         await sleep(3)
         await unbon.delete()
 
@@ -335,7 +335,7 @@ async def spider(spdr):
         )
 
     # If everything goes well, do announcing and mute
-    await spdr.edit("`Telah Dibisukan!`")
+    await spdr.edit("`Telah Dibisukan, mngknya jngn bnyak bcot!`")
     if mute(spdr.chat_id, user.id) is False:
         return await spdr.edit("`Error! Pengguna Sudah Dibisukan.`")
     else:
