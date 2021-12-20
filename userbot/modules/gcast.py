@@ -17,6 +17,10 @@ GCAST_BLACKLIST = [
     -1001752592753,  # Skyzusupport
     -1001456135097,  # SpamBot
     -1001462425381,  # GRUP GUA
+    -1001538121906,  # groupPrivate asli
+    -1001452687499,  # Private biasa
+    -1001347414136,  # Musikkuprivate
+
 ]
 
 # BLACKLIST NYA JANGAN DI HAPUS NGENTOD.
