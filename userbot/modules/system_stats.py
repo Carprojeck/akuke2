@@ -1,4 +1,4 @@
-# System Stats RAM-UBOT
+# System Stats OSCARS-UBOT
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
