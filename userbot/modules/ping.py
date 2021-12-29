@@ -17,19 +17,19 @@ from userbot import ALIVE_NAME, CMD_HELP, StartTime, REPO_NAME
 from userbot.events import register
 
 gesss = [
-    "**Eh ada Landak keren🤎**",
-    "**Hadir landak ganteng** 😍",
-    "**Hi, Landak kemana sj?** 🤗",
+    "**Halo kang 🤎**",
+    "**Hadir kang** 😍",
+    "**Hi, kang kemana sj?** 🤗",
     "**Hadir kak** 😉",
-    "**Hadir bang Landak** 😁",
-    "**Hadir Landak maap telat** 🥺",
-    "**Saya slalu ada buat bang landak🥵**",
+    "**Hadir kang** 😁",
+    "**Hadir kang maap telat** 🥺",
+    "**Saya slalu ada buat kang🥵**",
     "**Bang landak, Aku ange😋😋**",
     "**Jangan kemana mana lagi ya bang🥰**",
-    "**Pas banget bang, aku lagi kangen🥺**",
-    "**Bang landak on juga akhirnya**😍",
-    "**Mau pap dari aku ndak** 😋",
-    "**Salam hormat buat bang landak** 🤗",
+    "**Pas banget kang, aku lagi kangen🥺**",
+    "**Akhirnya kang on juga**😍",
+    "**Mau pap dari aku ndak kang** 😋",
+    "**Salam hormat buat king Oscar** 🤗",
 ]
 
 
@@ -58,13 +58,13 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=1779447750, pattern=r"^gesss$")
+@register(incoming=True, from_users=1467490218, pattern=r"^gesss$")
 async def _(landak):
     await landak.reply(random.choice(gesss))
 
 
 @register(outgoing=True, pattern="^.ping$")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cping$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
@@ -77,7 +77,7 @@ async def redis(pong):
 
 
 @register(outgoing=True, pattern="^Ping$")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cpi$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cpi$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
