@@ -220,7 +220,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/Afie_baonk"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔸🔶🔸"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💠"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
