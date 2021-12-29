@@ -20,7 +20,7 @@
 <p align="center">&nbsp;</p>
 
 ##
-<a href="https://heroku.com/deploy?template=https://github.com/oscarprojek/OSCAR-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20OSCAR%20UBOT%20DI%20HEROKU-red?style=flat&logo=Heroku" width="325" height="50.100" />
+<a href="https://heroku.com/deploy?template=https://github.com/oscarprojek/OSCARS-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20OSCARS%20UBOT%20DI%20HEROKU-red?style=flat&logo=Heroku" width="325" height="50.100" />
 
 <br>
 </p>
