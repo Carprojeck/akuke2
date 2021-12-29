@@ -1,3 +1,4 @@
+![VIEWS](https://komarev.com/ghpvc/?username=oscarprojek)
 
 ## PEMILIK REPO
 * **King Oscar** 
