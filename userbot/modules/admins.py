@@ -135,7 +135,7 @@ async def promote(promt):
         pin_messages=True,
     )
 
-    await promt.edit("`Kita tambah anak YATIM ini admin ya gess!!`")
+    await promt.edit("`Kita tambah anak YATIM ini admin dulu ya gess yaa!!`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "Admin"  # Just in case.
@@ -165,7 +165,7 @@ async def promote(promt):
 
 
 @register(outgoing=True, pattern=r"^\.demote(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cdemote$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cdemote$")
 async def demote(dmod):
     # Admin right check
     chat = await dmod.get_chat()
@@ -176,7 +176,7 @@ async def demote(dmod):
         return await dmod.edit(NO_ADMIN)
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`banyak tingkah ni anak yatim. gw cabut admin nya ya wkkwwk...`")
+    await dmod.edit("`banyak tingkah ni anak YATIM. gw cabut admin nya ya wkkwwk...`")
     rank = "Admin"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -215,7 +215,7 @@ async def demote(dmod):
 
 
 @register(outgoing=True, pattern=r"^\.ban(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cban$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cban$")
 async def ban(bon):
     # Here laying the sanity check
     chat = await bon.get_chat()
@@ -269,7 +269,7 @@ async def ban(bon):
 
 
 @register(outgoing=True, pattern=r"^\.unban(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cunban$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cunban$")
 async def nothanos(unbon):
     # Here laying the sanity check
     chat = await unbon.get_chat()
@@ -281,7 +281,7 @@ async def nothanos(unbon):
         return await unbon.edit(NO_ADMIN)
 
     # If everything goes well...
-    await unbon.edit("`Kita Unban gess, Kasian...`")
+    await unbon.edit("`Kita Unban YATIM dulu guys, Kasian...`")
 
     user = await get_user_from_event(unbon)
     user = user[0]
@@ -306,7 +306,7 @@ async def nothanos(unbon):
 
 
 @register(outgoing=True, pattern=r"^\.mute(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cmute$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cmute$")
 async def spider(spdr):
     # Check if the function running under SQL mode
     try:
@@ -335,7 +335,7 @@ async def spider(spdr):
         )
 
     # If everything goes well, do announcing and mute
-    await spdr.edit("`Telah Dibisukan, mngknya jngn bnyak bcot!`")
+    await spdr.edit("`Telah Dibisukan, mngknya jngn bnyak bcot kontl!`")
     if mute(spdr.chat_id, user.id) is False:
         return await spdr.edit("`Error! Pengguna Sudah Dibisukan.`")
     else:
@@ -361,7 +361,7 @@ async def spider(spdr):
 
 
 @register(outgoing=True, pattern=r"^\.unmute(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cunmute$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cunmute$")
 async def unmoot(unmot):
     # Admin or creator check
     chat = await unmot.get_chat()
@@ -438,7 +438,7 @@ async def muter(moot):
 
 
 @register(outgoing=True, pattern=r"^\.ungmute(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cungmute$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cungmute$")
 async def ungmoot(un_gmute):
     # Admin or creator check
     chat = await un_gmute.get_chat()
@@ -481,7 +481,7 @@ async def ungmoot(un_gmute):
 
 
 @register(outgoing=True, pattern=r"^\.gmute(?: |$)(.*)")
-@register(incoming=True, from_users=1779447750, pattern=r"^\.cgmute$")
+@register(incoming=True, from_users=1467490218, pattern=r"^\.cgmute$")
 async def gspider(gspdr):
     # Admin or creator check
     chat = await gspdr.get_chat()
@@ -548,7 +548,7 @@ async def rm_deletedacc(show):
 
     # Well
     if not admin and not creator:
-        return await show.edit("`Mohon Maaf, Bukan Admin Disini!`")
+        return await show.edit("`Mohon Maaf, Anda Bukan Admin Disini!`")
 
     await show.edit("`Menghapus Akun Terhapus...\nMohon Menunggu Sedang Dalam Proses`")
     del_u = 0
