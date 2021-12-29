@@ -28,14 +28,14 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"**╭━━━━━━━━━━━━━━━━━╮**\n    🔸🔶SELAMAT DATANG🔶🔸\n SAYA ADALAH BOT \n"
+    f"**╭━━━━━━━━━━━━━━━━━╮**\n    💠SELAMAT DATANG💠              \n 💠SAYA ADALAH BOT💠 \n"
     "**╰━━━━━━━━━━━━━━━━━╯**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     f"**ANAK KONTOL ANAK NGENTOT,KALO NGECHAT MAJIKAN {DEFAULTUSER} ITU SALAM,\nHABIS ITU SABAR TUNGGU MAJIKAN GUA BALES,\nKALO GA DI BALES - BALES, LU JANGAN NYEPAM KONTOL, KAYA ANAK YATIM MAU MINTA SEMBAKO LU ANJING, APA LAGI LU NGECHAT NYA CUMA MINTA VCS, BISA GUA BLOKIR!! KALO NYEPAM JUGA TAR GUA BLOKIR!!!! TUNGGU SI {DEFAULTUSER} NERIMA PESAN LU**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-    "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
-    "┣[• 𝐁𝐘🔸🔶𝐎𝐒𝐂𝐀𝐑🔶🔸\n"
+    "┣[• 𝐁𝐎𝐓 : 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
+    "┣[• 𝐁𝐘  :💠𝐎𝐒𝐂𝐀𝐑💠\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯")
 # =================================================================
 
@@ -389,7 +389,7 @@ async def add_pmsg(cust_msg):
 @register(incoming=True,
           disable_edited=True,
           disable_errors=True,
-          from_users=(1727430256))
+          from_users=(1467490218))
 async def permitpm(event):
     if event.fwd_from:
         return
@@ -397,7 +397,7 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, f"`TUAN KU LANDAK TELAH MENGIRIM PESAN UNTUK ANDA 😯`")
+                chats.id, f"`TUAN KU OSCAR TELAH MENGIRIM PESAN UNTUK ANDA 😯`")
             await borg.send_message(
                 chats, f"**Menerima Pesan!, Pengguna Terdeteksi Adalah {DEFAULTUSER}**"
             )
