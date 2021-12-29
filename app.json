@@ -1,6 +1,6 @@
 {
-  "name": "OSCAR-UBOT",
-  "description": "[OSCAR-UBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "OSCARS-UBOT",
+  "description": "[OSCARS-UBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/oscarprojek/OSCAR-UBOT",
+  "repository": "https://github.com/oscarprojek/OSCARS-UBOT",
   "telegram": "https://t.me/GwMuluAjg",
   "success_url": "https://t.me/ootspambott",
   "stack": "container",
