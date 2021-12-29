@@ -55,7 +55,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari RAM-USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari OSCARS-UBOT.`'
             )
             repo.__del__()
             return
@@ -100,7 +100,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`RAM-UBOT Berhasil Di Update`")
+                "`OSCARS-UBOT Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**RAM-UBOT Telah Di Perbarui ツ**")
+            "**OSCARS-UBOT Telah Di Perbarui ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -236,9 +236,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru RAM-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru OSCARS-UBOT."
     "\n\n.update one"
-    "\nUsage: Memperbarui RAM-UBOT."
+    "\nUsage: Memperbarui OSCARS-UBOT."
     "\n\n.update all"
-    "\nUsage: Memperbarui RAM-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui OSCARS-UBOT Dengan Cara Deploy Ulang."
 })
