@@ -178,7 +178,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+REPO_NAME = os.environ.get("REPO_NAME") or "🔥𝗢𝗦𝗖𝗔𝗥-𝗨𝗕𝗢𝗧🔥"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -210,30 +210,30 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/5e197cb47a4168c39f78f.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/ebd2fc330355f159804da.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/5daa73aa6d1afbd1da353.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/ebd2fc330355f159804da.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/Afie_baonk"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💫"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔸🔶🔸"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/ootspambott"
+    "GROUP_LINK") or "t.me/Daarkevilshadow"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/MaafGausahSokap"
+    "OWNER_BOT") or "t.me/GwMuluAjg"
 
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "🔥𝗢𝗦𝗖𝗔𝗥-𝗨𝗕𝗢𝗧🔥"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -275,7 +275,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║DAH AKTIF YA NGENTOT!!🔥🔥║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "```║OSCAR UBOT !!🔥🔥║\nBERHASIL DI AKTIFKAN```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -411,7 +411,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**⭐RAM-UBOT⭐ v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**🔥𝗢𝗦𝗖𝗔𝗥-𝗨𝗕𝗢𝗧🔥 v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -480,7 +480,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "< ̤< ̤", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    f"⭐ 𝗖𝗟𝗢𝗦𝗘 ⭐", data="{}_close({})".format(prefix, modulo_page)
+                    f"🔶 𝗖𝗟𝗢𝗦𝗘 🔶", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     "> ̤> ̤", data="{}_next({})".format(prefix, modulo_page)
@@ -504,11 +504,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__  **⭐RAM-UBOT⭐** \n\n"
+                f"**Hey**, __I am using__  **🔥𝗢𝗦𝗖𝗔𝗥-𝗨𝗕𝗢𝗧🔥** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"✨ **Group Support :** [GEEZ](t.me/Geezsupportgroup)\n"
-                f"✨ **Owner Repo :** [LANDAK](t.me/maafgausahsokap)\n"
-                f"✨ **Repo :** [RAM-UBOT](https://github.com/ramadhani892/RAM-BOT)\n"
+                f"✨ **Group Support :** [CAR](t.me/Daarkevilshadow)\n"
+                f"✨ **Owner Repo :** [OSCAR](t.me/GwMuluAjg)\n"
+                f"✨ **Repo :** [🔥𝗢𝗦𝗖𝗔𝗥-𝗨𝗕𝗢𝗧🔥](https://github.com/oscarprojek/OSCARS-UBOT)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -517,16 +517,16 @@ with bot:
                 buttons=[
                     [
                         custom.Button.url(
-                            text="✨ REPO RAM-UBOT ✨",
-                            url="https://github.com/ramadhani892/RAM-UBOT",
+                            text="✨ REPO OSCAR-UBOT ✨",
+                            url="https://github.com/oscarprojek/OSCARS-UBOT",
                         )
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/Geezsupportgroup"
+                            text="GROUP", url="https://t.me/Daarkevilshadow"
                         ),
                         custom.Button.url(
-                            text="CHANNEL", url="https://t.me/userbotchannel"
+                            text="CHANNEL", url="https://t.me/Car_projeck"
                         ),
                     ],
                 ],
@@ -542,20 +542,20 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**✨ inline RAM-UBOT ✨**\n\n⭐ **Owner** [LANDAK](t.me/maafgausahsokap)\n✨ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✨ inline OSCAR-UBOT ✨**\n\n⭐ **Owner** [OSCAR](t.me/GwMuluAjg)\n✨ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository ✨RAM-UBOT✨",
-                    url="https://t.me/geezsupportgroup",
-                    text="**⭐RAM-UBOT⭐**\n➖➖➖➖➖➖➖➖➖➖\n✨ **Owner :** [LANDAK](https://t.me/maafgausahsokap)\n✨ **Support :** @geezsupportgroup\n✨ **Repository :** [⭐RAM-UBOT⭐](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository 🔥OSCARS-UBOT🔥",
+                    url="https://t.me/Daarkevilshadow",
+                    text="**🔥OSCARS-UBOT🔥**\n➖➖➖➖➖➖➖➖➖➖\n✨ **Owner :** [OSCAR](https://t.me/GwMuluAjg)\n✨ **Support :** @Daarkevilshadow\n✨ **Repository :** [🔥OSCARS-UBOT🔥](https://github.com/oscarprojek/OSCARS-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/geezsupportgroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/Daarkevilshadow"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/oscarprojek/OSCARS-UBOT"
                             ),
                         ],
                     ],
@@ -563,15 +563,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⭐ RAM-UBOT ⭐",
-                    description="RAM-UBOT | Telethon",
-                    url="https://t.me/geezsupportgroup",
-                    text=f"**RAM-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✨ **OWNER:** [LANDAK](t.me/maafgausahsokap)\n✨ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @userbotchannel\n➖➖➖➖➖➖➖➖➖➖",
+                    title="🔥 OSCARS-UBOT 🔥",
+                    description="OSCAR-UBOT | Telethon",
+                    url="https://t.me/Daarkevilshadow",
+                    text=f"**OSCAR-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✨ **OWNER:** [OSCAR](t.me/GwMuluAjg)\n✨ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @userbotchannel\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/geezsupportgroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/Daarkevilshadow"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/oscarprojek/OSCARS-UBOT"
                             ),
                         ],
                     ],
@@ -605,27 +605,27 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"⭐RAM-UBOT⭐\n\n✨**Owner : [LANDAK](t.me/maafgausahsokap)**\n\n✨ **Bot Ver :** `8.0`\n✨ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔥OSCARS-UBOT🔥\n\n✨**Owner : [OSCAR](t.me/GwMuluAjg)**\n\n✨ **Bot Ver :** `8.0`\n✨ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⭐RAM-UBOT⭐ ",
+                    "Bantuan Dari 🔥OSCARS-UBOT🔥 ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⭐RAM-UBOT⭐ ",
-                    text="""**⭐RAM-UBOT⭐\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " 🔥OSCARS-UBOT🔥 ",
+                    text="""**🔥OSCARS-UBOT🔥\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⭐RAM-UBOT⭐",
-                                "https://github.com/ramadhani892/RAM-UBOT"),
+                                "🔥OSCARS-UBOT🔥",
+                                "https://github.com/oscarprojek/OSCARS-UBOT"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/Maafgausahsokap")]],
+                                "t.me/GwMuluAjg")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -662,9 +662,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/userbotchannel"),
+                                       "t.me/Car_projeck"),
                             Button.url("🚨 Group support",
-                                       "t.me/GeezSupportGroup")],
+                                       "t.me/Daarkevilshadow")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
