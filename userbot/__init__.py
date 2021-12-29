@@ -108,7 +108,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/oscarprojek/OSCAR-UBOT")
+    "https://github.com/oscarprojek/OSCARS-UBOT")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "RAM-UBOT")
 
@@ -217,7 +217,7 @@ HELP_LOGO = os.environ.get(
    "HELP_LOGO") or "https://telegra.ph/file/ebd2fc330355f159804da.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/Afie_baonk"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/afie_baong"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💠"
