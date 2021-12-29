@@ -59,8 +59,8 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @register(incoming=True, from_users=1467490218, pattern=r"^gesss$")
-async def _(landak):
-    await landak.reply(random.choice(gesss))
+async def _(Oscar):
+    await Oscar.reply(random.choice(gesss))
 
 
 @register(outgoing=True, pattern="^.ping$")
@@ -69,7 +69,7 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Assalamualaikum..")
+    await pong.edit("😡")
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
@@ -139,7 +139,7 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("PONG")
     await asyncio.sleep(1)
-    await pong.edit("✨")
+    await pong.edit("🥵")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
